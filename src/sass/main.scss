@@ -3,17 +3,28 @@
 
 body {
     margin: 0;
-    background-color: $primary;
     font-family: 'Poppins', sans-serif;
     font-weight: $fw-normal;
 }
 
+#bg-video {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    z-index: -1;
+}
+
 header {
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(31,32,32,0.49205619747899154) 100%);
+    position: sticky;
+    top: 0;
+    left: 0;
+
     nav {
         @include flex('horizontal', 'space-between');
         @include gap(3);
-        background-color: $primary-lighter;
-        padding-block: 0.7rem;
+        padding-block: 1rem;
         padding-inline: 5rem;
         
         .nav-brand {
@@ -62,7 +73,7 @@ header {
     justify-content: center;
     align-items: start;
     margin-left: 8rem;
-    height: 90vh;
+    height: 80vh;
 
     h1 {
         width: 50%;
@@ -91,7 +102,7 @@ header {
         }
         label {
             color: $secondary;
-            left: 32%;
+            left: 30%;
         }
         span {
             position: absolute;
@@ -101,4 +112,8 @@ header {
             right: 10%;
         }
     }
+}
+
+#background {
+    height: 100vh;
 }

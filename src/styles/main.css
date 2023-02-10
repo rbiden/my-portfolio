@@ -69,7 +69,6 @@ input[type=search]:focus, input[type=text]:focus {
   pointer-events: none;
   font-weight: 500;
   top: 30%;
-  left: 25%;
 }
 .floating-group input:focus ~ label, .floating-group input:valid ~ label {
   transform: translateY(-200%);
@@ -77,11 +76,25 @@ input[type=search]:focus, input[type=text]:focus {
 
 body {
   margin: 0;
-  background-color: #212529;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
+#bg-video {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  z-index: -1;
+}
+
+header {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(31, 32, 32, 0.4920561975) 100%);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 header nav {
   display: flex;
   align-items: center;
@@ -90,8 +103,7 @@ header nav {
   display: flex;
   align-items: center;
   gap: 3rem;
-  background-color: #343a40;
-  padding-block: 0.7rem;
+  padding-block: 1rem;
   padding-inline: 5rem;
 }
 header nav .nav-brand {
@@ -140,7 +152,7 @@ header nav .nav-addons button {
   justify-content: center;
   align-items: start;
   margin-left: 8rem;
-  height: 90vh;
+  height: 80vh;
 }
 #home h1 {
   width: 50%;
@@ -168,7 +180,7 @@ header nav .nav-addons button {
 }
 #home .floating-group label {
   color: #f8f9fa;
-  left: 32%;
+  left: 30%;
 }
 #home .floating-group span {
   position: absolute;
@@ -176,4 +188,8 @@ header nav .nav-addons button {
   color: #f8f9fa;
   top: 1.9rem;
   right: 10%;
+}
+
+#background {
+  height: 100vh;
 }
