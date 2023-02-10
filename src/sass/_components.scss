@@ -1,0 +1,55 @@
+@import './mixins';
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    li {
+    
+        list-style: none;
+    }
+}
+
+button {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-weight: $fw-normal;
+    font-size: medium;
+    border-radius: 0.3rem;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+button:active {
+    scale: 0.99;
+}
+
+button:hover {
+    background-color: darken($color: $secondary, $amount: 15);
+}
+
+input[type='search'], input[type='text'] {
+    position: relative;
+    padding-block: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 1rem;
+    background-color: $secondary;
+    border: 0;
+    border-radius: 0.3rem;
+    font-weight: $fw-normal;
+    outline: 0;
+    color: $primary;
+}
+
+input[type='search']:focus, input[type='text']:focus {
+    outline: solid 3px $gray;
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap");
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+
+button {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  font-weight: 600;
+  font-size: medium;
+  border-radius: 0.3rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.99;
+}
+
+button:hover {
+  background-color: #cbd3da;
+}
+
+input[type=search], input[type=text] {
+  position: relative;
+  padding-block: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 1rem;
+  background-color: #f8f9fa;
+  border: 0;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  outline: 0;
+  color: #212529;
+}
+
+input[type=search]:focus, input[type=text]:focus {
+  outline: solid 3px #6c757d;
+}
+
+.floating-group {
+  position: relative;
+  overflow: hidden;
+}
+.floating-group input {
+  text-indent: 1.5rem;
+  margin: 0;
+  font-size: 1rem;
+  width: 90%;
+}
+.floating-group label {
+  position: absolute;
+  font-size: medium;
+  transition: all 0.3s;
+  pointer-events: none;
+  font-weight: 500;
+  top: 30%;
+  left: 25%;
+}
+.floating-group input:focus ~ label, .floating-group input:valid ~ label {
+  transform: translateY(-200%);
+}
+
+body {
+  margin: 0;
+  background-color: #212529;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: #343a40;
+  padding-block: 0.7rem;
+  padding-inline: 5rem;
+}
+header nav .nav-brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+header nav .nav-brand h1 {
+  color: #f8f9fa;
+  font-size: 1.8rem;
+}
+header nav .nav-brand span {
+  color: #ffbc05;
+  margin-left: 1rem;
+}
+header nav .nav-items ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0.5rem;
+}
+header nav .nav-items ul li a {
+  font-size: medium;
+  color: #f8f9fa;
+}
+header nav .nav-addons button {
+  border-radius: 2rem;
+  color: #f8f9fa;
+  padding-block: 0.8rem;
+  padding-inline: 1.3rem;
+  border: solid 2px #f8f9fa;
+  background-color: transparent;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 8rem;
+  height: 90vh;
+}
+#home h1 {
+  width: 50%;
+  font-size: 2.5rem;
+  color: #f8f9fa;
+}
+#home h1 span {
+  line-height: 6rem;
+  font-size: 6rem;
+}
+#home small {
+  color: #f8f9fa;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#home .floating-group {
+  width: 33%;
+}
+#home .floating-group input {
+  border-radius: 4rem;
+  color: #f8f9fa;
+  padding-block: 1.3rem;
+  border: solid 2px #f8f9fa;
+  background-color: transparent;
+}
+#home .floating-group label {
+  color: #f8f9fa;
+  left: 32%;
+}
+#home .floating-group span {
+  position: absolute;
+  pointer-events: none;
+  color: #f8f9fa;
+  top: 1.9rem;
+  right: 10%;
+}

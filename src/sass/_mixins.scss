@@ -1,0 +1,38 @@
+@import './variables';
+
+@mixin flex($orientation, $type) {
+    display: flex;
+    align-items: center;
+
+    @if $orientation == 'vertical' {
+        flex-direction: column;
+    }
+    @else if $orientation == 'horizontal' {
+        flex-direction: row;
+    }
+
+    @if  $type == 'space-between' {
+        justify-content: space-between;
+    }
+    @else if  $type == 'space-evenly' {
+        justify-content: space-evenly;
+    }
+    @else if $type == 'center' {
+        justify-content: center;
+    }
+    @else if $type == 'start' {
+        justify-content: start;
+    }
+    @else if $type == 'end' {
+        justify-content: end;
+    }
+    @else {
+        justify-content: unset;
+    }
+}
+
+@mixin gap($n) {
+    display: flex;
+    align-items: center;
+    gap: $n + rem;
+}
