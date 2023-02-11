@@ -11,7 +11,10 @@
 <body>
     <video autoplay muted loop id="bg-video">
         <source src="/src/images/bg-video.mp4" type="video/mp4">
-    </video>      
+    </video>
+    <div id="bg-blur">
+        <span>Blur Background</span>
+    </div>
     <header>
         <nav>
             <div class="nav-brand">
@@ -26,10 +29,24 @@
                 </ul>
             </div>
             <div class="nav-addons">
-                <button>Get Started!</button>
+                <button id="btnGetStarted">Get Started!</button>
             </div>  
         </nav>
     </header>
+    <div id="welcome-modal">
+        <h1>Let's Go!</h1>
+        <div class="modal-content">
+            <h2>Do you want to know more about me?</h2>
+            <div class="floating-group">
+                <input type="text" required spellcheck="false">
+                <label>But first, tell me your name..</label>
+            </div>
+            <div class="button-group">
+                <button id="btnModalYes">Yeah, I'd like to.</button>
+                <a href="#" id="btnModalNo">Hmm.. not yet.</a>
+            </div>
+        </div>
+    </div>
     <div id="home">
         <h1>Welcome to my <br><span>Personal Portfolio</span></h1>
         <small>I'm grateful that you're here!</small>

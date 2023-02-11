@@ -51,5 +51,5 @@ input[type='search'], input[type='text'] {
 }
 
 input[type='search']:focus, input[type='text']:focus {
-    outline: solid 3px $gray;
+    outline: solid 3px currentColor;
 }

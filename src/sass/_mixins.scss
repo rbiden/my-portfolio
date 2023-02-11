@@ -31,6 +31,14 @@
     }
 }
 
+@mixin center-absolute {
+    margin-top: 5%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @mixin gap($n) {
     display: flex;
     align-items: center;
