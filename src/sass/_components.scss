@@ -1,7 +1,12 @@
 @import './mixins';
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    user-select: none;
+}
+
+button, a {
+    cursor: pointer;
 }
 
 a {
@@ -26,7 +31,6 @@ button {
     border-radius: 0.3rem;
     border: 0;
     outline: 0;
-    cursor: pointer;
 }
 
 button:active {
@@ -43,7 +47,7 @@ input[type='search'], input[type='text'] {
     padding-left: 0.7rem;
     padding-right: 1rem;
     background-color: $secondary;
-    border: 0;
+    border: solid 2px currentColor;
     border-radius: 0.3rem;
     font-weight: $fw-normal;
     outline: 0;

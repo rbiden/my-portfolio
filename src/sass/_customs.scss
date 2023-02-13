@@ -17,7 +17,6 @@
         transition: all 0.3s;
         pointer-events: none;
         font-weight: $fw-thin;
-        top: 30%;
     }
 
     input:focus ~ label, input:valid ~ label {
